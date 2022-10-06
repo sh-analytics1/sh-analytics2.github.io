@@ -36,6 +36,7 @@ p {
     font-weight: 400;
 }
 
+
 /* css for header */
 
 /* header when window is smaller then 960px */
@@ -47,22 +48,15 @@ p {
     .intro-text h1 {
         font-size: 40px;
     }
+
 }
 
 @media screen and (max-width: 402px) {
-    .navigation a p {
-        font-size: 15px;
-    }
-
     .hero-wrapper h1 {
         font-size: 30px;
     }
 
     .hero-wrapper p {
-        font-size: 15px;
-    }
-
-    .hero-wrapper a {
         font-size: 15px;
     }
 }
@@ -128,12 +122,15 @@ p {
     font-size: 20px;
 }
 
+
+
 .about-nav {
     padding-bottom: 4px;
     display: inline-block;
     text-decoration: none;
     position: relative;
 }
+
 
 .about-nav::before {
     content: "";
