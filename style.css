@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.65;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ffce1e 50%, #ffe589 50%);
+    color: #fff;
+}
+
+
+/* main style */
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.details {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 4rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.art {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.art img {
+    width: 70%;
+}
+
+
+.title {
+    display: inline-block;
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background-color: #fff;
+    width: 140px;
+}
+
+
+.intro {
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.description {
+    margin-bottom: 2rem;
+    line-height: 1.77;
+    color: rgb(60, 60, 60);
+}
+
+.subscribe {
+    background-color: #ffde66;
+    padding: 1.5rem;
+    width: 85%;
+    border-radius: 3px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, .25);
+}
+
+.subscribe h3 {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.form {
+    position: relative;
+}
+
+.form input {
+    font-family: inherit;
+    outline: none;
+    font-size: 90%;
+    padding: 10px 1rem;
+    border: none;
+    display: block;
+    border-radius: 2px;
+}
+
+.form .email {
+    width: 100%;
+    background-color: #ecf0f1;
+}
+
+.form .submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f9c400;
+    color: fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color .22s ease;
+}
+
+.form .submit:hover {
+    background-color: #ffce1e;
+}
