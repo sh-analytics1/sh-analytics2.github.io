@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100;200;300;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --ff-primary: 'Poppins', sans-serif;
+    --header-height: 90px;
+    --black: #000;
+    --white: #fff;
+    --main-color: var(--black);
+    --horizontal-padding: 50px;
+    --yellow: #ffc666;
+}
+
+
+
+/* main css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-primary);
+    background-color: #000;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+/* Css for header */
+.header-wrapper {
+    align-items: center;
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+.logo {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 670px) {
+    .main-nav {
+        display: grid;
+    }
+} 
+
+
+
+.main-nav-links {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.main-nav-links:hover {
+    color: rgb(129, 129, 129);
+}
+
+
+/* Css for hero */
+.hero-wrapper {
+    padding-top: 200px;
+    color: white;
+    height: 90vh;
+}
+
+
+.h1-header {
+    font-size: 40px;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.hero-content {
+    display: flex;
+}
+
+
+.description {
+    width: 50%;
+}
+
+.desciption-text {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+.team {
+    max-width: 35%;
+    padding-left: 20%;
+}
+
+.customers {
+    max-width: 15%;
+    padding-left: 8%;
+}
+
+.a-header {
+    color: dimgray;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1060px){
+    .team {
+        display: none;
+    }
+
+    .customers {
+        display: none;
+    }
+
+    .description {
+        width: 100%;
+    }
+}
+
+
+.team ul,
+.customers ul {
+    list-style: none;
+}
+
+.team li,
+.customers li {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+
+/* Css for about */
+.about-wrapper {
+    height: 100vh;
+    width: 100%;
+    color: white;
+    padding-top: 5vh;
+}
+
+@media screen and (max-width: 650px) {
+    .about-wrapper {
+        padding-top: 50vh;
+        margin-bottom: 275vh;
+    }
+} 
+
+@media screen and (max-width: 400px) {
+    .about-wrapper {
+        padding-top: 80vh;
+        margin-bottom: 350vh;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .about-wrapper {
+        padding-top: 150vh;
+    }
+}
+
+
+
+.where {
+    width: 10%;
+    height: 100%;
+    font-size: 20px;
+}
+
+.about-intro {
+    display: flex;
+}
+
+.what-we-do {
+    padding-left: 15%;
+    font-size: 28px;
+}
+
+
+.about-us {
+    padding-top: 120px;
+    display: block;
+    width: 90%;
+    padding-left: 10%;
+    display: flex;
+}
+
+@media screen and (max-width: 640px) {
+    .about-us {
+        display: block;
+    }
+}
+
+.person {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+.person img {
+    width: 150px;
+    border: 5px solid dimgray;
+    border-radius: 50%;
+}
+
+.person h1 {
+    font-size: 20px;
+}
+
+.person p {
+    font-size: 20px;
+    color: dimgray;
+}
+
+.dream-team {
+    margin-left: 10%;
+    width: 75%;
+}
+
+.dream-team h1 {
+    color: dimgray;
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+.dream-team p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+
+
+/* ccs for footer */
+.footer {
+    height: 100vh;
+    width: 100%;
+    background-color: #D3D3D3;
+}
+
+.footer-header {
+    justify-content: space-between;
+    display: flex;
+    width: 50%;
+    margin-left: 25%;
+    padding-top: 2.5%;
+}
+
+.footer-header p {
+    font-size: 25px;
+    width: 15vw;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 500px){
+    .footer-header p {
+        font-size: 15px;
+    }
+
+    .footer {
+        padding-bottom: 120vh;
+    }
+}
+
+.footer-mail {
+    padding-left: 5%;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+.mail-adres {
+    font-size: 140px;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.mail-adres:hover {
+    color: dimgray;
+}
+
+.mail-icon {
+    font-size: 250px;
+    text-decoration: none;
+    color: #000;
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .mail-adres {
+        display: none;
+    }
+
+    .mail-icon {
+        display: inline-block;
+    }
+
+    .footer-mail {
+        text-align: center;
+    }
+}
+
+.top {
+    display: grid;
+    transform: translateY(-20px);
+    font-size: 20px;
+}
+
+.top a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.footer-footer {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.footer-link {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    padding-bottom: 4px;
+    display: inline-block;
+    position: relative;
+    font-weight: 500;
+}
+
+.footer-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    transition: width 250ms ease-out;
+}
+
+.footer-link:hover::before {
+    width: 100%;
+}
+
+.footer-logo {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+.full-width-container {
+    width: 100%;
+    height: 100%;
+    padding-top: 150px;
+}
+
+
+
+
+
+
+/* css for scroll down button */
+.demo a {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font : normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+}
+.demo a:hover {
+    opacity: .5;
+}
+
+#section05 a span {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb05 1.5s infinite;
+    animation: sdb05 1.5s infinite;
+    box-sizing: border-box;
+}
+@-webkit-keyframes sdb05 {
+    0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+    }
+    @keyframes sdb05 {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+
+.scroll--hidden {
+    display: none;
+}
+
+@media screen and (max-width: 1350px) {
+    .scroll-button {
+        display: none;
+    }
+}
+
